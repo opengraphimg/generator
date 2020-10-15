@@ -1,0 +1,29 @@
+{
+  "name": "generate-opengraph",
+  "description": "Generate the images based on queries",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Daniel Esteves <estevesd8@gmail.com> (@danestves)",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "chrome-aws-lambda": "^3.1.1",
+    "puppeteer-core": "^4.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "rollup": "^2.23.0",
+    "rollup-plugin-node-polyfills": "^0.2.1"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  }
+}
