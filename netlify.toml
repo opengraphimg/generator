@@ -5,3 +5,7 @@
   from = "/"
   to = "/.netlify/functions/process-url"
   status = 200
+[[redirects]]
+  from = "/view"
+  to = "/.netlify/functions/generate-opengraph"
+  status = 200
