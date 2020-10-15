@@ -1,7 +1,6 @@
 [build]
   functions = "functions"
-  command = "yarn generate && make install"
-  publish = "dist"
+  command = "make install"
 [[redirects]]
   from = "/opengraph"
   to = "/.netlify/functions/process-url"
