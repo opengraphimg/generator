@@ -2,6 +2,6 @@
   functions = "functions"
   command = "make install"
 [[redirects]]
-  from = "/opengraph"
+  from = "/"
   to = "/.netlify/functions/process-url"
   status = 200
