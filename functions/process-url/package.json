@@ -6,7 +6,6 @@
   "author": "Daniel Esteves <estevesd8@gmail.com> (@danestves)",
   "license": "MIT",
   "dependencies": {
-    "cloudinary": "file:./cloudinary",
-    "urlsafe-base64": "^1.0.0"
+    "cloudinary": "^1.23.0"
   }
 }
