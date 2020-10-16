@@ -13,7 +13,7 @@ exports.handler = async function (event, ctx) {
 
   try {
     const imageUrl = cloudinary.url(
-      `${process.env.IMAGE_VERSION}/og-images/image-1.png`,
+      `${process.env.IMAGE_VERSION}/opengraphimg.png`,
       {
         // resouce_type: "raw"
         sign_url: true,
