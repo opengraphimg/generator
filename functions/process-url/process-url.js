@@ -20,7 +20,7 @@ exports.handler = async function (event, ctx) {
         secure: true,
         custom_pre_function: {
           function_type: "remote",
-          source: `https://generator.opengraphimg.com/view?${qs.stringify(
+          source: `https://generator.opengraphimg.com/.netlify/functions/generate-opengraph?${qs.stringify(
             query
           )}`,
         },
