@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // eslint-disable-next-line
-import { jsx } from '@emotion/core'
-import { render } from 'react-dom'
+import { jsx } from "@emotion/core";
+import { render } from "react-dom";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       css={{
         width: 1200,
         height: 630,
-        background: window.background ? `#${window.background}` : '#fff',
+        background: window.background ? `#${window.background}` : "#fff",
       }}
     >
       <div
@@ -18,13 +18,13 @@ function App() {
         css={{
           background: window.boxBackground
             ? `#${window.boxBackground}`
-            : '#1a202c',
+            : "#1a202c",
         }}
       >
         <h1
           className={`h-full ${window.titleAlign} ${window.titleSize} ${window.titleMargin}`}
           css={{
-            color: window.titleColor ? `#${window.titleColor}` : '#fff',
+            color: window.titleColor ? `#${window.titleColor}` : "#fff",
           }}
           dangerouslySetInnerHTML={{
             __html: decodeURIComponent(decodeURIComponent(window.title)),
@@ -35,12 +35,12 @@ function App() {
           <ul
             className={`${window.tagsSize} flex`}
             css={{
-              color: window.tagsColor ? `#${window.tagsColor}` : '#fff',
-              '& li': {
-                marginRight: '.5rem',
-                '&:not(:last-child):after': {
+              color: window.tagsColor ? `#${window.tagsColor}` : "#fff",
+              "& li": {
+                marginRight: ".5rem",
+                "&:not(:last-child):after": {
                   content: "'•'",
-                  marginLeft: '.5rem',
+                  marginLeft: ".5rem",
                 },
               },
             }}
@@ -52,7 +52,7 @@ function App() {
           <span
             className={`${window.authorSize}`}
             css={{
-              color: window.authorColor ? `#${window.authorColor}` : '#fff',
+              color: window.authorColor ? `#${window.authorColor}` : "#fff",
             }}
           >
             {window.logoUrl && (
@@ -62,13 +62,13 @@ function App() {
                 className={`${window.logoSize} inline-block ${window.logoMargin}`}
               />
             )}
-            {window.atSymbol && '@'}
-            {window.author}
+            {window.atSymbol && "@"}
+            {window.author ? window.author : ""}
           </span>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-render(<App />, document.getElementById('app'))
+render(<App />, document.getElementById("app"));
