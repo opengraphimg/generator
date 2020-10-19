@@ -63,7 +63,7 @@ function App() {
               />
             )}
             {window.atSymbol && "@"}
-            {window.author ? window.author : ""}
+            {window.author !== "" ? window.author : ""}
           </span>
         </div>
       </div>
