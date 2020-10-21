@@ -1,0 +1,12 @@
+{
+  "name": "generator",
+  "version": "0.0.2",
+  "description": "Generate og:images for social media sharing",
+  "repository": "git@github.com:opengraphimg/generator.git",
+  "author": "Daniel Esteves <estevesd8@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
+  }
+}
