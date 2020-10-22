@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+### [v0.0.3](#!)
+
+> 21 October 2020
+
+🚀 Features:
+
+- [c0fb3ec4cc2969aa1a96deff155c226011d5552c] Adding classic design and custom design
+
 #### [v0.0.2](https://github.com/opengraphimg/generator/releases/tag/v0.0.2)
 
 > 18 October 2020
