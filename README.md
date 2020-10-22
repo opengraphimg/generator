@@ -10,7 +10,10 @@
   <a href="https://twitter.com/danestves" target="_blank">
     <img alt="Twitter: danestves" src="https://img.shields.io/twitter/follow/danestves.svg?style=social" />
   </a>
+  
 </p>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7ce73d9-351e-4751-95cb-aa9ad8851d3c/deploy-status)](https://app.netlify.com/sites/generator-opengraph/deploys)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
