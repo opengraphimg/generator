@@ -2,13 +2,13 @@
 import { jsx } from "@emotion/core";
 
 export default () => {
-  const background = window.background ? `#${window.background}` : "#fff";
+  const background = window.background ? `#${window.background}` : "#1C64F2";
   const boxBackground = window.boxBackground
     ? `#${window.boxBackground}`
-    : "#1a202c";
+    : "#161E2E";
   const titleAlign = window.titleAlign ? window.titleAlign : "text-center";
   const titleSize = window.titleSize ? window.titleSize : "text-6xl";
-  const titleMargin = window.titleMargin ? window.titleMargin : "m-0";
+  const titleMargin = window.titleMargin ? window.titleMargin : "-mt-8 -mx-32";
   const titleColor = window.titleColor ? `#${window.titleColor}` : "#ffffff";
   const detailsMargin = window.detailsMargin ? window.detailsMargin : "-m-20";
   const tagsSize = window.tagsSize ? window.tagsSize : "text-2xl";

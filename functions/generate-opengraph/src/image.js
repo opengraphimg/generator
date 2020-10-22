@@ -4,12 +4,15 @@ import { jsx } from "@emotion/core";
 import { render } from "react-dom";
 
 // Styles
+import Classic from "./styles/classic";
 import Custom from "./styles/custom";
 
 function App() {
   switch (window.style) {
+    case "classic":
+      return <Classic />;
     case "custom":
-      <Custom />;
+      return <Custom />;
     default:
       return <Custom />;
   }
