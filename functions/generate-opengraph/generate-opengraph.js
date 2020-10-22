@@ -48,6 +48,7 @@ exports.handler = async (event, context) => {
 
   const {
     queryStringParameters: {
+      style,
       tags: tagsParam,
       title,
       author,
@@ -71,6 +72,7 @@ exports.handler = async (event, context) => {
   const tags = tagsParam ? decodeURIComponent(tagsParam).split(",") : [];
   await page.addScriptTag({
     content: `
+      window.style = "${style || "custom"}";
       window.title = "${title || "No Title"}";
       window.tags = ${JSON.stringify(tags)};
       window.author = "${author ? decodeURI(author) : ""}";
