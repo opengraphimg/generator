@@ -1,9 +1,7 @@
 /** @jsx jsx */
-// eslint-disable-next-line
 import { jsx } from "@emotion/core";
-import { render } from "react-dom";
 
-function App() {
+export default () => {
   return (
     <div
       className={`absolute flex overflow-hidden`}
@@ -69,6 +67,4 @@ function App() {
       </div>
     </div>
   );
-}
-
-render(<App />, document.getElementById("app"));
+};
