@@ -8,8 +8,8 @@ All notable changes to this project will be documented in this file. Dates are d
 
 🚀 Features:
 
-- [c0fb3ec](https://github.com/opengraphimg/generator/commit/f8a02d3cf3fb440ef42c47ab7bb29a530046debb) Adding classic design and custom design
-- c0fb3ec
+- [c0fb3ec](https://github.com/opengraphimg/generator/commit/f8a02d3cf3fb440ef42c47ab7bb29a530046debb) Putting new `custom` design to personalize all the image
+- [c0fb3ec](https://github.com/opengraphimg/generator/commit/f8a02d3cf3fb440ef42c47ab7bb29a530046debb) New `classic` design as template and customizable if they wish
 
 #### [v0.0.2](https://github.com/opengraphimg/generator/releases/tag/v0.0.2)
 
