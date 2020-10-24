@@ -12,7 +12,7 @@ export default () => {
   const borderColor = window.borderColor ? `#${window.borderColor}` : "#1C64F2";
   const titleAlign = window.titleAlign ? window.titleAlign : "text-left";
   const titleSize = window.titleSize ? window.titleSize : "text-6xl";
-  const titleMargin = window.titleMargin ? window.titleMargin : "-mt-8 -mx-16";
+  const titleMargin = window.titleMargin ? window.titleMargin : "-mt-16 -mx-16";
   const titleColor = window.titleColor ? `#${window.titleColor}` : "#1C64F2";
   const detailsMargin = window.detailsMargin
     ? window.detailsMargin
