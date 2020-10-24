@@ -36,6 +36,11 @@ exports.handler = async (event, context) => {
           .rounded-2xl {
             border-radius: 16px;
           }
+
+          .rounded-t-2xl {
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+          }
         </style>
       </head>
       <body>
@@ -54,6 +59,7 @@ exports.handler = async (event, context) => {
       author,
       background,
       boxBackground,
+      boxOverlayBackground,
       titleColor,
       titleAlign,
       titleSize,
@@ -80,6 +86,7 @@ exports.handler = async (event, context) => {
 
       // Box Styles
       window.boxBackground = "${boxBackground || ""}";
+      window.boxOverlayBackground = "${boxOverlayBackground || ""}";
 
       // Title Styles
       window.titleColor = "${titleColor || ""}";
