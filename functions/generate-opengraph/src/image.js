@@ -11,7 +11,7 @@ import Custom from "./styles/custom";
 function App() {
   switch (window.style) {
     case "devto":
-      <Devto />;
+      return <Devto />;
     case "classic":
       return <Classic />;
     case "custom":
