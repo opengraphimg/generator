@@ -27,7 +27,7 @@ export default () => {
     <img
       src={window.logoUrl}
       alt={window.title}
-      className={`${logoSize} inline-block ${logoMargin}`}
+      className={`${logoSize} inline-block ${logoMargin} rounded-full`}
     />
   );
   const atSymbol = window.atSymbol && "@";
