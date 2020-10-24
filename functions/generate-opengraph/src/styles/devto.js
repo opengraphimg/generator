@@ -12,11 +12,11 @@ export default () => {
   const borderColor = window.borderColor ? `#${window.borderColor}` : "#1C64F2";
   const titleAlign = window.titleAlign ? window.titleAlign : "text-left";
   const titleSize = window.titleSize ? window.titleSize : "text-6xl";
-  const titleMargin = window.titleMargin ? window.titleMargin : "-mt-8 -mx-32";
+  const titleMargin = window.titleMargin ? window.titleMargin : "-mt-8 -mx-16";
   const titleColor = window.titleColor ? `#${window.titleColor}` : "#1C64F2";
   const detailsMargin = window.detailsMargin
     ? window.detailsMargin
-    : "-my-20 -mx-32";
+    : "-my-20 -mx-16";
   const tagsSize = window.tagsSize ? window.tagsSize : "text-2xl";
   const tagsColor = window.tagsColor ? `#${window.tagsColor}` : "#1C64F2";
   const authorSize = window.authorSize ? window.authorSize : "text-2xl";
