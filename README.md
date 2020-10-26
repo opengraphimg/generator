@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to opengraphimg-generator 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.2-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.0.5-blue.svg?cacheSeconds=2592000" />
   <a href="https://opengraphimg.com" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -10,7 +10,10 @@
   <a href="https://twitter.com/danestves" target="_blank">
     <img alt="Twitter: danestves" src="https://img.shields.io/twitter/follow/danestves.svg?style=social" />
   </a>
+  
 </p>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7ce73d9-351e-4751-95cb-aa9ad8851d3c/deploy-status)](https://app.netlify.com/sites/generator-opengraph/deploys)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 

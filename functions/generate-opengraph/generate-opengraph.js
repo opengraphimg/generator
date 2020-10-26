@@ -36,6 +36,11 @@ exports.handler = async (event, context) => {
           .rounded-2xl {
             border-radius: 16px;
           }
+
+          .rounded-t-2xl {
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+          }
         </style>
       </head>
       <body>
@@ -48,16 +53,21 @@ exports.handler = async (event, context) => {
 
   const {
     queryStringParameters: {
+      style,
       tags: tagsParam,
       title,
       author,
       background,
       boxBackground,
+      boxOverlayBackground,
+      borderColor,
       titleColor,
       titleAlign,
       titleSize,
       titleMargin,
+      tagBackgroud,
       detailsMargin,
+      authorBackgroud,
       tagsColor,
       tagsSize,
       logoUrl,
@@ -71,34 +81,39 @@ exports.handler = async (event, context) => {
   const tags = tagsParam ? decodeURIComponent(tagsParam).split(",") : [];
   await page.addScriptTag({
     content: `
+      window.style = "${style || "custom"}";
       window.title = "${title || "No Title"}";
       window.tags = ${JSON.stringify(tags)};
       window.author = "${author ? decodeURI(author) : ""}";
-      window.background = "${background || "fff"}";
+      window.background = "${background || ""}";
 
       // Box Styles
-      window.boxBackground = "${boxBackground || "1a202c"}";
+      window.boxBackground = "${boxBackground || ""}";
+      window.boxOverlayBackground = "${boxOverlayBackground || ""}";
+      window.borderColor = "${borderColor || ""}";
 
       // Title Styles
-      window.titleColor = "${titleColor || "fff"}";
-      window.titleAlign = "${titleAlign || "text-center"}";
-      window.titleSize = "${titleSize || "text-6xl"}";
-      window.titleMargin = "${titleMargin || "m-0"}";
+      window.titleColor = "${titleColor || ""}";
+      window.titleAlign = "${titleAlign || ""}";
+      window.titleSize = "${titleSize || ""}";
+      window.titleMargin = "${titleMargin || ""}";
 
       // Details Styles
-      window.detailsMargin = "${detailsMargin || "-m-20"}";
+      window.tagBackgroud = "${tagBackgroud || ""}";
+      window.detailsMargin = "${detailsMargin || ""}";
+      window.authorBackgroud = "${authorBackgroud || ""}";
 
       // Tags Styles
-      window.tagsColor = "${tagsColor || "fff"}";
-      window.tagsSize = "${tagsSize || "text-2xl"}";
+      window.tagsColor = "${tagsColor || ""}";
+      window.tagsSize = "${tagsSize || ""}";
 
       // Author Styles
       window.logoUrl = "${logoUrl || ""}";
-      window.logoSize = "${logoSize || "w-10 h-10"}";
-      window.logoMargin = "${logoMargin || "mr-4"}";
+      window.logoSize = "${logoSize || ""}";
+      window.logoMargin = "${logoMargin || ""}";
       window.atSymbol = ${atSymbol || false};
-      window.authorColor = "${authorColor || "fff"}";
-      window.authorSize = "${authorSize || "text-4xl"}";
+      window.authorColor = "${authorColor || ""}";
+      window.authorSize = "${authorSize || ""}";
     `,
   });
   await page.addScriptTag({ content: script });
