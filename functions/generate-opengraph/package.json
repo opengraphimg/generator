@@ -1,7 +1,7 @@
 {
   "name": "generate-opengraph",
   "description": "Generate the images based on queries",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "main": "index.js",
   "author": "Daniel Esteves <estevesd8@gmail.com> (@danestves)",
   "license": "MIT",
