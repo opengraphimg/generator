@@ -60,11 +60,14 @@ exports.handler = async (event, context) => {
       background,
       boxBackground,
       boxOverlayBackground,
+      borderColor,
       titleColor,
       titleAlign,
       titleSize,
       titleMargin,
+      tagBackgroud,
       detailsMargin,
+      authorBackgroud,
       tagsColor,
       tagsSize,
       logoUrl,
@@ -87,6 +90,7 @@ exports.handler = async (event, context) => {
       // Box Styles
       window.boxBackground = "${boxBackground || ""}";
       window.boxOverlayBackground = "${boxOverlayBackground || ""}";
+      window.borderColor = "${borderColor || ""}";
 
       // Title Styles
       window.titleColor = "${titleColor || ""}";
@@ -95,7 +99,9 @@ exports.handler = async (event, context) => {
       window.titleMargin = "${titleMargin || ""}";
 
       // Details Styles
+      window.tagBackgroud = "${tagBackgroud || ""}";
       window.detailsMargin = "${detailsMargin || ""}";
+      window.authorBackgroud = "${authorBackgroud || ""}";
 
       // Tags Styles
       window.tagsColor = "${tagsColor || ""}";
