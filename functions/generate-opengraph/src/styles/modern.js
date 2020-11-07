@@ -46,7 +46,7 @@ export default () => {
       }}
     >
       <div
-        className="flex flex-col justify-between flex-1 p-32 rounded-2xl"
+        className="flex flex-col justify-between flex-1 p-32"
         css={{
           background: boxBackground,
         }}
