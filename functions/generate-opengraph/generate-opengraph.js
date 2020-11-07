@@ -27,7 +27,7 @@ exports.handler = async (event, context) => {
 
   await page.setContent(`
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" style="background: transparent;">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,8 +43,8 @@ exports.handler = async (event, context) => {
           }
         </style>
       </head>
-      <body>
-        <div id="app">
+      <body style="background: transparent;">
+        <div id="app" style="background: transparent;">
           <div>Hi, this is the OG Image</div>
         </div>
       </body>
