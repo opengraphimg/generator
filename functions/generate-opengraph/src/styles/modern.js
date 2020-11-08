@@ -11,8 +11,8 @@ export default () => {
   const titleMargin = window.titleMargin ? window.titleMargin : "";
   const titleColor = window.titleColor ? `#${window.titleColor}` : "#ffffff";
   const tagsMargin = window.tagsMargin ? window.tagsMargin : "-mx-16 -mt-16";
-  const tagBackgroud = window.tagBackgroud
-    ? `#${window.tagBackgroud}`
+  const tagBackground = window.tagBackground
+    ? `#${window.tagBackground}`
     : "#1C64F2";
   const authorMargin = window.authorMargin
     ? window.authorMargin
@@ -62,7 +62,7 @@ export default () => {
               <li
                 key={tag}
                 className="px-5 py-1 rounded"
-                css={{ background: tagBackgroud }}
+                css={{ background: tagBackground }}
               >
                 #{tag}
               </li>

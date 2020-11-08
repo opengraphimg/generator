@@ -65,7 +65,7 @@ exports.handler = async (event, context) => {
       titleAlign,
       titleSize,
       titleMargin,
-      tagBackgroud,
+      tagBackground,
       detailsMargin,
       authorBackgroud,
       tagsColor,
@@ -99,7 +99,7 @@ exports.handler = async (event, context) => {
       window.titleMargin = "${titleMargin || ""}";
 
       // Details Styles
-      window.tagBackgroud = "${tagBackgroud || ""}";
+      window.tagBackground = "${tagBackground || ""}";
       window.detailsMargin = "${detailsMargin || ""}";
       window.authorBackgroud = "${authorBackgroud || ""}";
 
